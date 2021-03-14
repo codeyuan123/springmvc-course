@@ -8,10 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>first springmvc</title>
-    <p><a href="some.do">发起一个请求</a></p>
+    <title>提交参数</title>
 </head>
 <body>
+
+
+    <form action="/view.do" method="post">
+        <input type="text" name="name"/><br>
+        <input type="text" name="age"><br>
+        <input type="submit" name="提交">
+    </form>
 
 </body>
 </html>

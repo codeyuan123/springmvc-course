@@ -4,7 +4,7 @@
     <title>show.jsp</title>
 </head>
 <body>
-    <h3>${msg}</h3>
-    <h3>${fun}</h3>
+    <h3>${age}</h3>
+    <h3>${name}</h3>
 </body>
 </html>

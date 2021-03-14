@@ -14,6 +14,20 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
+    <facet type="JRebel" name="JRebel">
+      <configuration>
+        <option name="ideModuleStorage">
+          <map>
+            <entry key="com.zeroturnaround.jrebel.FormatVersion" value="7.0.0" />
+            <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="false" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerPreviousEnabledSelection" value="instance" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="instance" />
+            <entry key="jrebelEnabled" value="true" />
+            <entry key="lastExternalPluginCheckTime" value="1615557735614" />
+          </map>
+        </option>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -37,5 +51,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.2.5.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.18" level="project" />
   </component>
 </module>
