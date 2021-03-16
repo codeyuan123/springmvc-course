@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * @author colbert
@@ -65,6 +65,7 @@ public class HelloController {
         Student student = new Student();
         student.setAge(20);
         student.setName("李四");
+        System.out.println(student);
         return student;
     }
 }

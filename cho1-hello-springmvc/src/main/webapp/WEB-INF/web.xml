@@ -12,7 +12,6 @@
     <servlet>
         <servlet-name>dispactherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-
         <!--自定义springmvc配置文件的位置-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -22,6 +21,14 @@
         <!-- 创建servlet的先后顺序-->
         <load-on-startup>1</load-on-startup>
     </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispactherServlet</servlet-name>
+        <!--以.do结尾的请求都交给中央调度器处理-->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
 
     <!--配置过滤器，解决post参数乱码-->
     <filter>
@@ -43,11 +50,6 @@
             <param-value>true</param-value>
         </init-param>
     </filter>
-    <servlet-mapping>
-        <servlet-name>dispactherServlet</servlet-name>
-        <!--以.do结尾的请求都交给中央调度器处理-->
-        <url-pattern>*.do</url-pattern>
-    </servlet-mapping>
 
     <filter-mapping>
         <filter-name>characterEncodingFilter</filter-name>
